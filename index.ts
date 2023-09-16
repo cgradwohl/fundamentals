@@ -16,25 +16,25 @@ import { Queue } from './data-structures/queue';
 // console.log(q2.pop()) // b
 
 // 3. Priority Queue
-const q = new Queue(false)
-q.push('a', 1)
-q.push('b', 100)
-q.push('c', 10)
-q.push('d', 100)
+// const q = new Queue(false)
+// q.push('a', 1)
+// q.push('b', 100)
+// q.push('c', 10)
+// q.push('d', 100)
 
-// b,d,c,a
+// // b,d,c,a
 
-console.log(q.pop())
-console.log(q.pop())
-console.log(q.pop())
-console.log(q.pop())
+// console.log(q.pop())
+// console.log(q.pop())
+// console.log(q.pop())
+// console.log(q.pop())
 
 
-// todo: add delay ability like sqs
-q = new CustomQueue(fifo = True)
+// TODO: add delay ability like sqs
+const q = new Queue(true)
 q.push('a', delay = 10)
 q.push('b', delay = 0)
 
-q.pop() # b
-# ...wait 10 seconds
-q.pop() # a
+q.pop() // b
+// ...wait 10 seconds
+q.pop() // a
