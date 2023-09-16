@@ -30,3 +30,11 @@ console.log(q.pop())
 console.log(q.pop())
 
 
+// todo: add delay ability like sqs
+q = new CustomQueue(fifo = True)
+q.push('a', delay = 10)
+q.push('b', delay = 0)
+
+q.pop() # b
+# ...wait 10 seconds
+q.pop() # a
